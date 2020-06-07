@@ -30,6 +30,10 @@ public class Credentials1 extends AppCompatActivity {
         ArrayList<String> designation = new ArrayList<>(Arrays.asList(designations));
         ArrayAdapter<String> arrayAdapterdesignation = new ArrayAdapter<>(this, support_simple_spinner_dropdown_item,designation);
         designation_spinner.setAdapter(arrayAdapterdesignation);
+        states_spinner = findViewById(R.id.Statesspinner);
+        String [] states = {"TamilNadu","Karnataka","Andhra Pradesh","Maharashtra"};
+        ArrayList<String> state = new ArrayList<>(Arrays.asList(states));
+        ArrayAdapter<String> arrayAdapterstates = new ArrayAdapter<>(this,support_simple_spinner_dropdown_item,state);
 
     }
 }
