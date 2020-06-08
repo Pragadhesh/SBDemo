@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import android.os.Bundle;
@@ -16,16 +17,15 @@ import java.util.Arrays;
 import static com.example.sbdemo.R.layout.support_simple_spinner_dropdown_item;
 
 public class Credentials1 extends AppCompatActivity {
-    androidx.appcompat.widget.Toolbar toolbar_cred1;
     Spinner designation_spinner,states_spinner;
+    Button back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credentials1);
-        toolbar_cred1 = (Toolbar) findViewById(R.id.toolbar_credentials1);
-        toolbar_cred1.setNavigationIcon(R.drawable.ic_back);
-        toolbar_cred1.setNavigationOnClickListener(new View.OnClickListener() {
+        back = (Button) findViewById(R.id.backbutton);
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openhome();
@@ -41,6 +41,7 @@ public class Credentials1 extends AppCompatActivity {
         ArrayList<String> state = new ArrayList<>(Arrays.asList(states));
         ArrayAdapter<String> arrayAdapterstates = new ArrayAdapter<>(this,support_simple_spinner_dropdown_item,state);
         states_spinner.setAdapter(arrayAdapterstates);
+
     }
     public void openhome()
     {
