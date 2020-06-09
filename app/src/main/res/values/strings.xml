@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">SBDemo</string>
+    <string name="phone_number">Phone number *</string>
+    <string name="enter_your_mci_number">Enter your MCI Number</string>
+    <string name="credentials_1">Credentials 1/2</string>
+    <string name="mci_number">MCI number *</string>
+    <string name="designation">Designation *</string>
+    <string name="state_of_registration">State of Registration *</string>
+    <string name="next">Next</string>
+    <string name="enter_your_phone_number">Enter your Phone Number</string>
 </resources>
